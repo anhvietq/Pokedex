@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {View, Text, Image, StyleSheet, ActivityIndicator} from 'react-native';
 
+
 const Details = ({route, navigation}) => {
   const [details, setDetails] = useState([]);
   const [type, setType] = useState(null);
@@ -8,7 +9,7 @@ const Details = ({route, navigation}) => {
   useEffect(() => {
     fetchPokemonDetails();
   }, []);
-
+ 
   const fetchPokemonDetails = () => {
     fetch(`https://pokeapi.co/api/v2/pokemon/${route.params.pokemon}`)
       .then(res => res.json())
@@ -26,14 +27,15 @@ const Details = ({route, navigation}) => {
             uri: `https://img.pokemondb.net/artwork/large/${details.name}.jpg`,
           }}
         />
-  
+        <View style={{...styles.detailsbox, backgroundColor: '#edebeba8'}}>
         <Text style={styles.text}>Name: {details.name}</Text>
-        <Text style={styles.text}>Height: {details.height}</Text>
-        <Text style={styles.text}>Weight: {details.weight}</Text>
+        <Text style={styles.text}>Height: {details.height} cm</Text>
+        <Text style={styles.text}>Weight: {details.weight} kg</Text>
         <Text style={styles.text}>
           Ability: {details.abilities[0].ability.name}
         </Text>
         <Text style={styles.text}>Type: {details.types[0].type.name}</Text>
+        </View>
       </View>
     ) : (
       <View style={styles.indicator}>
@@ -52,7 +54,16 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginBottom: 10
   },
+  detailsbox: {
+    borderRadius: 5,
+    width: 300,
+    borderWidth: 1,
+    borderColor: 'black'
+    
+  },
   text: {
+    padding: 5,
+    alignSelf: 'center',
     textTransform: 'capitalize',
     fontSize: 22,
     marginBottom: 15,

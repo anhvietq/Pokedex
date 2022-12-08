@@ -1,5 +1,4 @@
 import { StyleSheet, Text, View, TextInput, Button, Image } from 'react-native';
-import HomeScreen from './components/Screens/HomeScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import GenerationOne from './components/Screens/GenerationOne';
@@ -13,9 +12,6 @@ import GenerationsMenu from './components/Screens/GenerationsMenu';
 const Screens = {
   Home: {
       screen: Home
-  },
-  HomeScreen: {
-      screen: HomeScreen
   },
   GenerationsMenu: {
       screen: GenerationsMenu

@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { View, 
   Text, 
@@ -16,7 +15,7 @@ function GenerationsMenu ({navigation}) {
       <View>
       <ImageBackground
         style ={styles.GenerationsMenuBackGround}
-        source = {require('../../assets/images/Welcome4.png')}>
+        source = {require('../../assets/images/GenerationsMenu.png')}>
       <ScrollView>
 {/*Generation One*/}
       <View style={styles.GenerationsContainer}>

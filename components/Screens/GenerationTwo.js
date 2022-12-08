@@ -59,7 +59,7 @@ import React, {useState, useEffect} from 'react';
                               }.jpg`
                             }}
                           />
-                          <Text>{pokemon.name}</Text>
+                          <Text style={styles.PokeNames}>{pokemon.name}</Text>
                         </TouchableOpacity>
                       );
                     })}
@@ -78,6 +78,11 @@ import React, {useState, useEffect} from 'react';
             flexWrap: 'wrap',
             justifyContent: 'center',
             padding: 50
+          },
+          PokeNames: {
+            textTransform: 'capitalize',
+            fontSize: 18,
+            fontWeight: '500'
           },
           card: {
             display: 'flex',

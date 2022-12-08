@@ -18,7 +18,7 @@ function Home ({navigation}) {
       <ImageBackground
          style={styles.backgroundImage}  
          resizeMode="stretch"
-        source= {require('../../assets/images/Welcome6.png')}>
+        source= {require('../../assets/images/HomeScreen.png')}>
       <Image style={styles.PokeDexHeader}
              source= {require('../../assets/images/pokedex.png')}/>
       <Text style={styles.TextHeader}>Welcome to The Pokédex</Text>

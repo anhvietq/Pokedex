@@ -7,7 +7,8 @@ import { View,
   Dimensions,
   Image, 
   ScrollView,
-  TouchableOpacity} from 'react-native';
+  TouchableOpacity,
+  Modal} from 'react-native';
 
 
 function GenerationsMenu ({navigation}) {
@@ -16,11 +17,11 @@ function GenerationsMenu ({navigation}) {
       <ImageBackground
         style ={styles.GenerationsMenuBackGround}
         source = {require('../../assets/images/GenerationsMenu.png')}>
-      <ScrollView>
+      <ScrollView  contentContainerStyle={{paddingBottom: 100}}>
 {/*Generation One*/}
-      <View style={styles.GenerationsContainer}>
+      <View style={{...styles.GenerationsContainer, flex: '1'}}>
        <TouchableOpacity
-        onPress={() => navigation.navigate('GenerationOne')} >
+        onPress={() => navigation.navigate('Generation1')} >
         <View style={{...styles.GenerationsBox, backgroundColor:'#d9d9d9'}}>
         <Text style={styles.GenerationHeader}>Generation One</Text>
         <View style={{flexDirection:'row'}}>
@@ -38,7 +39,7 @@ function GenerationsMenu ({navigation}) {
         </TouchableOpacity>
 {/*Generation Two*/}
         <TouchableOpacity
-        onPress={() => navigation.navigate('GenerationTwo')} >
+        onPress={() => navigation.navigate('Generation2')} >
         <View style={{...styles.GenerationsBox, backgroundColor:'#d9d9d9'}}>
         <Text style={styles.GenerationHeader}>Generation Two</Text>
         <View style={{flexDirection:'row'}}>
@@ -56,7 +57,7 @@ function GenerationsMenu ({navigation}) {
         </TouchableOpacity>
 {/*Generation Three*/}
         <TouchableOpacity
-        onPress={() => navigation.navigate('GenerationThree')} >
+        onPress={() => navigation.navigate('Generation3')} >
         <View style={{...styles.GenerationsBox, backgroundColor:'#d9d9d9'}}>
         <Text style={styles.GenerationHeader}>Generation Three</Text>
         <View style={{flexDirection:'row'}}>
@@ -72,10 +73,72 @@ function GenerationsMenu ({navigation}) {
         </View>
         </View>
         </TouchableOpacity>
+{/*Generation Four*/}
+<TouchableOpacity
+        onPress={() => navigation.navigate('Generation4')} >
+        <View style={{...styles.GenerationsBox, backgroundColor:'#d9d9d9'}}>
+        <Text style={styles.GenerationHeader}>Generation Four</Text>
+        <View style={{flexDirection:'row'}}>
+        <Image 
+        style={styles.Gen1Starter}
+        source = {require ('../../assets/images/Gen4/387.png')}/>
+         <Image 
+        style={styles.Gen1Starter}
+        source = {require ('../../assets/images/Gen4/390.png')}/>
+         <Image 
+        style={styles.Gen1Starter}
+        source = {require ('../../assets/images/Gen4/393.png')}/>
+        </View>
+        </View>
+        </TouchableOpacity>
+{/*Generation Five*/}
+<TouchableOpacity
+        onPress={() => navigation.navigate('Generation5')} >
+        <View style={{...styles.GenerationsBox, backgroundColor:'#d9d9d9'}}>
+        <Text style={styles.GenerationHeader}>Generation Five</Text>
+        <View style={{flexDirection:'row'}}>
+        <Image 
+        style={styles.Gen1Starter}
+        source = {require ('../../assets/images/Gen5/495.png')}/>
+         <Image 
+        style={styles.Gen1Starter}
+        source = {require ('../../assets/images/Gen5/498.png')}/>
+         <Image 
+        style={styles.Gen1Starter}
+        source = {require ('../../assets/images/Gen5/501.png')}/>
+        </View>
+        </View>
+        </TouchableOpacity>
+{/*Generation Six*/}
+<TouchableOpacity
+        onPress={() => navigation.navigate('Generation6')} >
+        <View style={{...styles.GenerationsBox, backgroundColor:'#d9d9d9'}}>
+        <Text style={styles.GenerationHeader}>Generation Six</Text>
+        <View style={{flexDirection:'row'}}>
+        <Image 
+        style={styles.Gen1Starter}
+        source = {require ('../../assets/images/Gen6/650.png')}/>
+         <Image 
+        style={styles.Gen1Starter}
+        source = {require ('../../assets/images/Gen6/653.png')}/>
+         <Image 
+        style={styles.Gen1Starter}
+        source = {require ('../../assets/images/Gen6/656.png')}/>
+        </View>
+        </View>
+        </TouchableOpacity>
+{/*All Pokemons*/}
+        <TouchableOpacity
+        onPress={() => navigation.navigate('AllPokemons')} >
+        <View style={{...styles.GenerationsBox, backgroundColor:'#d9d9d9'}}>
+        <Text style={styles.GenerationHeader}>Explore all Pokemons</Text>
+        </View>
+        </TouchableOpacity>
         </View>
         </ScrollView>
         </ImageBackground>
         </View>
+       
           );
    }
 
@@ -86,7 +149,7 @@ const styles = StyleSheet.create({
     height: Dimensions.get('window').height,
   },
   GenerationsContainer: {
-    paddingTop: 100,
+    paddingTop:10,
     flex: 1,
     justifyContent: "center",
     alignItems: "center",

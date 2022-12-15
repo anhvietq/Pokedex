@@ -25,7 +25,7 @@ The Pokédex is a encyclopedia that provides information about various species o
 This Pokédex retrieves its data through [PokeAPI](https://pokeapi.co), and the images from the [Pokemon Database website](https://pokemondb.net). 
 
 As this project is a simplify version of the Pokédex, it only provides basic information of desired Pokemon.
-The purpose of this project was to the functionality of React Native through animations and handlers. 
+The purpose of this project was to learn and dive through the functionality of React Native through animations and handlers. 
 
 ## ⚙️Machineries
 The following machineries were used in this project: 

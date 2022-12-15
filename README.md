@@ -11,7 +11,7 @@
 
 <div align= 'center'>
   
-[About](https://github.com/anhvietq/Pokedex#about) |  [Machineries](https://github.com/anhvietq/Pokedex#Machineries)  | [Requirement](https://github.com/anhvietq/Pokedex#Requirements)  | [Launch](https://github.com/anhvietq/Pokedex#Launch) 
+[About](https://github.com/anhvietq/Pokedex#about) |  [Machineries](https://github.com/anhvietq/Pokedex#machineries)  | [Requirement](https://github.com/anhvietq/Pokedex#requirements)  | [Launch](https://github.com/anhvietq/Pokedex#launch) 
 
 </div>
 

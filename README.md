@@ -11,7 +11,7 @@
 
 <div align= 'center'>
   
-[About](https://github.com/anhvietq/Pokedex#about) |  [Machinery](https://github.com/anhvietq/Pokedex#Machineries)  | [Requirement](https://github.com/anhvietq/Pokedex#Requirements)  | [Launch](https://github.com/anhvietq/Pokedex#Launch) | [Inspiration](https://github.com/anhvietq/Pokedex#Inspiration) 
+[About](https://github.com/anhvietq/Pokedex#about) |  [Machinery](https://github.com/anhvietq/Pokedex#Machineries)  | [Requirement](https://github.com/anhvietq/Pokedex#Requirements)  | [Launch](https://github.com/anhvietq/Pokedex#Launch) 
 
 </div>
 
@@ -20,15 +20,47 @@
 </div>
 
 
-## 📢About
-The Pokédex is a encyclopedia that provides information about the various species of Pokémon, including their moves, stats, locations, and more.
+# 📢About
+The Pokédex is a encyclopedia that provides information about various species of Pokémon, including their moves, stats, locations, and more. 
+This Pokédex retrieves its data through [PokeAPI](https://pokeapi.co), and the images from the [Pokemon Database website](https://pokemondb.net). 
+
+As this project is a simplify version of the Pokédex, it only provides basic information of desired Pokemon.
+The purpose of this project was to the functionality of React Native through animations and handlers. 
 
 ## ⚙️Machineries
-
+The following machineries were used in this project: 
+  - [ExpoGo](https://expo.dev/client)
+  - [React Native](https://reactnative.dev)
+  - [React Navigation](https://reactnavigation.org)
+  - [JavaScript](https://www.javascript.com)
+  - [Visual Studio Code](https://code.visualstudio.com)
+  
 ## 📑Requirements
+The requirements needed to run this project: 
+  - Have [Node.js](https://nodejs.org/en/) installed.
+  - Have an iOS emulator or [ExpoGo](https://expo.dev/client).
 
 ## 🚀Launch
+  Clone the repository:
+```
+$ https://github.com/anhvietq/Pokedex
+```
+  Access the directory: 
+```
+cd Pokedex
+```
+  Install dependencies: 
+```
+npm install
+```
+  Run the project: 
+``` 
+npm start
+```
+  To open iOS simulator on desktop, press ``i``, or to open the project on your mobile device, scan the ``QR code`` provided within the terminal. 
+##
+Thank you for stopping by 🫶🏻 please leave a star if you enjoy my project 🤓
 
-## 🌱Inspiration
+Made with 🫀 by Anh Pham
 
 

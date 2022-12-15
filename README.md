@@ -8,7 +8,7 @@
 <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/anhvietq/Pokedex?style=plastic">
 </div>
 
-[About](#https://github.com/anhvietq/Pokedex/edit/main/README.md#about)
+[About](#https://github.com/anhvietq/Pokedex/main/README.md#about)
 
 <div align ='center'>
 <img src = assets/images/poke1.gif width="250" height= "550"/> <img  src = assets/images/poke2.gif width="250" height= "550"/>
